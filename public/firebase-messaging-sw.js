@@ -52,14 +52,7 @@ importScripts('https://www.gstatic.com/firebasejs/9.6.11/firebase-messaging-comp
 importScripts('/utils.js');
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDzpdaNkhXrl1v1UmhdCR1CCbIMF8pGDzo",
-  authDomain: "prueba-9878c.firebaseapp.com",
-  databaseURL: "https://prueba-9878c-default-rtdb.firebaseio.com",
-  projectId: "prueba-9878c",
-  storageBucket: "prueba-9878c.firebasestorage.app",
-  messagingSenderId: "952359356580",
-  appId: "1:952359356580:web:3960e637eaebb3abd2be31",
-  measurementId: "G-TR6MSN8Z46"
+
 };
 
 firebase.initializeApp(firebaseConfig);
