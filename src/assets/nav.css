@@ -63,7 +63,7 @@
     display: block;
 }
 
-@media (max-width: 480px),(max-width: 500px) {
+@media(max-width: 420px),(max-width: 500px), (min-width: 501px) and (max-width: 700px) {
     /* Menú en pantallas pequeñas */
     .navList {
         display: none;

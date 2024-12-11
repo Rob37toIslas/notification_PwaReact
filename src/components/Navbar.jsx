@@ -27,13 +27,13 @@ const Navbar = () => {
       {/* Menú de navegación */}
       <ul className={`navList ${isOpen ? 'open' : ''}`}>
         <li className="navItem">
-          <Link to="/" className="navLink">Home</Link>
+          <Link to="/" className="navLink">Inicio</Link>
         </li>
         <li className="navItem">
-          <Link to="/services" className="navLink">Services</Link>
+          <Link to="/services" className="navLink">Servicios</Link> {/* Corregido "Servisios" a "Servicios" */}
         </li>
         <li className="navItem">
-          <Link to="/login" className="navLink">Login</Link>
+          <Link to="/login" className="navLink">Iniciar sesión</Link> {/* Corregido "Iniciar session" a "Iniciar sesión" */}
         </li>
       </ul>
     </nav>
