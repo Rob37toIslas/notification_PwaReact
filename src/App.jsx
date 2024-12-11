@@ -10,14 +10,14 @@ import Services from './screens/services';
 const App = () => {
   return (
     <Router>    
-       <Navbar />
+    <Navbar />
      <div style={{ margin: '-10px', padding: 0 }}>
-
+   
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<Login />} />
-          <Route path="/contact" element={<Services />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/services" element={<Services />} />
         </Routes>
       </div>
     </Router>
