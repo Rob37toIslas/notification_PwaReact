@@ -1,8 +1,8 @@
 /* Navbar.css */
 .navbar {
     background-color: #fff;
-    margin: 0;
-    position: relative;
+    margin: auto;
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -10,25 +10,28 @@
     box-shadow: 0px 4px 12px rgba(0, 24, 92, 0.507);
     font-family: 'Montserrat', sans-serif;
 }
-  
+
 .navLogo {
     color: #000;
     font-size: 24px;
     font-weight: bold;
     text-decoration: none;
 }
-  
+
 .navList {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
 }
-  
+
 .navItem {
     margin: 0 15px;
+    padding: 10px; /* Agregado para que el área del navItem sea más grande */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative; /* Para asegurarse de que el color de fondo cubra el 100% */
 }
-  
+
 .navLink {
     color: #000;
     text-decoration: none;
@@ -46,7 +49,7 @@
     cursor: pointer;
     padding: 5px;
 }
-  
+
 .menu-toggle .bar {
     width: 25px;
     height: 3px;
@@ -58,8 +61,8 @@
 .navList.open {
     display: block;
 }
-  
-@media (max-width: 500px) {
+
+@media (max-width: 480px),(max-width: 500px) {
     /* Menú en pantallas pequeñas */
     .navList {
         display: none;
@@ -71,22 +74,29 @@
         top: 45px;
         left: 0;
         width: 100%;
-        padding: 15px 0;
+        padding: 10px 0;
     }
+
     .navItem {
-        margin: 3em;
-        transition: background-color 0.3s ease, transform 0.3s ease;
-        color: #fff;
+        width: 100%; /* Asegura que el fondo cubra el 100% */
+        text-align: center; /* Centra el contenido */
+        transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     .navItem:hover {
-        background-color: #9E2343;
-        color: #fff;
-        width: 100%;
-   
-
+        background-color: #9E2343; /* Fondo al hacer hover */
     }
-      
+
+    .navLink {
+        color: #000; /* Color del texto por defecto */
+        font-size: 18px;
+        transition: color 0.3s ease; /* Transición para el cambio de color */
+    }
+
+    .navItem:hover .navLink {
+        color: darkgoldenrod; /* Cambia el color del texto en hover */
+    }
+
     .menu-toggle {
         display: flex;
     }

@@ -9,9 +9,10 @@ import Services from './screens/services';
 
 const App = () => {
   return (
-    <Router>
-     <div style={{ margin: '-8px', padding: 0 }}>
-     <Navbar />
+    <Router>    
+       <Navbar />
+     <div style={{ margin: '-10px', padding: 0 }}>
+
 
         <Routes>
           <Route path="/" element={<Home />} />
