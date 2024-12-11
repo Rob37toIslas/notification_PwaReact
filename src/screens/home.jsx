@@ -55,7 +55,7 @@ const news = [
 const Home = () => {
   return (
     <div style={styles.container}>
-      <h2 style={{margin:'40px'}}>Noticias Tulancingo</h2>
+      <h2 style={{margin:'80px'}}>Noticias Tulancingo</h2>
       <p>Bienvenido a la página principal de Noticias Tulancingo, donde te traemos las últimas noticias de la ciudad.</p>
       
       <div style={styles.newsContainer}>
