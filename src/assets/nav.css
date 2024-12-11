@@ -4,6 +4,7 @@
     margin: auto;
     position: fixed;
     width: 100%;
+    padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,8 +27,6 @@
 }
 
 .navItem {
-    margin: 0 15px;
-    padding: 10px; /* Agregado para que el área del navItem sea más grande */
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative; /* Para asegurarse de que el color de fondo cubra el 100% */
 }
