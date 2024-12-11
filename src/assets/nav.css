@@ -29,6 +29,7 @@
 .navItem {
     transition: background-color 0.3s ease, color 0.3s ease;
     position: relative; /* Para asegurarse de que el color de fondo cubra el 100% */
+    margin: 15px;
 }
 
 .navLink {
@@ -70,7 +71,7 @@
         background-color: #fff;
         position: absolute;
         padding: 30px;
-        top: 45px;
+        top: 60px;
         left: 0;
         width: 100%;
         padding: 10px 0;
@@ -84,6 +85,7 @@
 
     .navItem:hover {
         background-color: #9E2343; /* Fondo al hacer hover */
+        padding: 20px;
     }
 
     .navLink {
