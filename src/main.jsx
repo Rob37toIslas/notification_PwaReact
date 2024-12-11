@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client'
 
 
 import App from './App.jsx'
-import requestNotificationPermission from './server.js'
+
 
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/firebase-messaging-sw.js')
@@ -15,7 +15,6 @@ if ('serviceWorker' in navigator) {
     });
 }
 
-requestNotificationPermission()
 
 
 

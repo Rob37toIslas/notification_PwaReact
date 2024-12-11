@@ -1,0 +1,93 @@
+/* Navbar.css */
+.navbar {
+    background-color: #fff;
+    margin: 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 12px rgba(0, 24, 92, 0.507);
+    font-family: 'Montserrat', sans-serif;
+}
+  
+.navLogo {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+  
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.navItem {
+    margin: 0 15px;
+}
+  
+.navLink {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Icono de hamburguesa */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+  
+.menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 5px;
+}
+
+/* Menú visible en pantallas pequeñas */
+.navList.open {
+    display: block;
+}
+  
+@media (max-width: 500px) {
+    /* Menú en pantallas pequeñas */
+    .navList {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        padding: 30px;
+        top: 45px;
+        left: 0;
+        width: 100%;
+        padding: 15px 0;
+    }
+    .navItem {
+        margin: 3em;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        color: #fff;
+    }
+
+    .navItem:hover {
+        background-color: #9E2343;
+        color: #fff;
+        width: 100%;
+   
+
+    }
+      
+    .menu-toggle {
+        display: flex;
+    }
+}
