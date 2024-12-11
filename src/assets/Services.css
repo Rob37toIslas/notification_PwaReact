@@ -1,0 +1,56 @@
+.services-container {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .services-title {
+    color: #8B0000;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .service-section {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service-section h3 {
+    color: #FFD700; 
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #8B0000; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #FFD700; 
+    color: #000;
+  }
+  
+  .success-message {
+    color: green;
+    margin-top: 10px;
+  }
+  
